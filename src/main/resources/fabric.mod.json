@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rgjavamod",
+	"version": "${version}",
+	"name": "Rgjava Mod",
+	"description": "This is a test.",
+	"authors": [
+		"Rgjava"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rgjavamod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.rgjava.rgjavamod.Rgjavamod"
+		],
+		"client": [
+			"net.rgjava.rgjavamod.RgjavamodClient"
+		],
+		"fabric-datagen": [
+			"net.rgjava.rgjavamod.RgjavaModDataGenerator"
+		]
+	},
+	"mixins": [
+		"rgjavamod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

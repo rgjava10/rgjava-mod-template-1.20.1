@@ -2,6 +2,7 @@ package net.rgjava.rgjavamod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.rgjava.rgjavamod.item.ModItemGroups;
 import net.rgjava.rgjavamod.item.Moditems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,8 +13,9 @@ public class Rgjavamod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
 		Moditems.registerModItems();
-		LOGGER.info("Hello Fabric world!");
+
+
 	}
 }

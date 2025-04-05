@@ -1,3 +1,6 @@
 {
-  "item.Rgjavamod.ruby": "Ruby"
+  "item.rgjavamod.ruby": "Ruby",
+  "item.rgjavamod.raw_ruby": "Raw Ruby",
+
+  "itemgroup.ruby": "Not enough materials"
 }
